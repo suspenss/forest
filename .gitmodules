@@ -1,6 +1,0 @@
-[submodule "theme"]
-	path = theme
-	url = https://git.sr.ht/~jonsterling/forester-base-theme
-	[submodule "forester-theme"]
-		path = forester-theme
-		url = https://github.com/Trebor-Huang/forester-theme
