@@ -5,7 +5,7 @@
   --radius: 5px;
   --font: "Computer Modern Serif", "Source Han Serif SC VF", "Noto Serif SC",
     serif;
-  --monospace: "Computer Modern Typewriter", monospace;
+  --monospace: "Fira Code", "Computer Modern Typewriter", monospace;
 }
 
 html {
@@ -92,7 +92,7 @@ img.embedded-tex {
 
 pre {
   font-family: var(--monospace);
-  line-height: 1em;
+  line-height: 1.3em;
   border-radius: var(--radius);
   background-color: rgba(0, 100, 100, 0.04);
   padding: 0.5em;
