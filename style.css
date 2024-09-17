@@ -5,7 +5,7 @@
   --radius: 5px;
   --font: "Computer Modern Serif", "Source Han Serif SC VF", "Noto Serif SC",
     serif;
-  --monospace: "Fira Code", "Computer Modern Typewriter", monospace;
+  --monospace: "Computer Modern Typewriter", monospace;
 }
 
 html {
@@ -72,6 +72,7 @@ p:empty {
 
 strong {
   font-weight: 600;
+  font-size: 11pt;
 }
 
 pre,
@@ -128,34 +129,22 @@ code {
   color: #aaa;
 }
 
-.block.hide-metadata > details > summary > header > .metadata {
+.block.hide-metadata>details>summary>header>.metadata {
   display: none;
 }
 
-article > section > details > summary > header > h1 > .taxon {
+article>section>details>summary>header>h1>.taxon {
   display: block;
   font-size: 0.9em;
   color: #888;
 }
 
-section
-  section[data-taxon="Reference"]
-  > details
-  > summary
-  > header
-  > h1
-  > .taxon,
-section
-  section[data-taxon="Person"]
-  > details
-  > summary
-  > header
-  > h1
-  > .taxon {
+section section[data-taxon="Reference"]>details>summary>header>h1>.taxon,
+section section[data-taxon="Person"]>details>summary>header>h1>.taxon {
   display: none;
 }
 
-footer > section {
+footer>section {
   margin-bottom: 1em;
 }
 
@@ -163,24 +152,24 @@ footer h2 {
   font-size: 14pt;
 }
 
-.metadata > address {
+.metadata>address {
   display: inline;
 }
 
-body > header {
+body>header {
   margin-bottom: 2em;
 }
 
-#grid-wrapper > article {
+#grid-wrapper>article {
   max-width: 40em;
   grid-column: 1;
 }
 
-#grid-wrapper > nav {
+#grid-wrapper>nav {
   grid-column: 2;
 }
 
-details > summary > header {
+details>summary>header {
   display: inline;
 }
 
@@ -193,7 +182,7 @@ details h1 {
   display: inline;
 }
 
-section .block[data-taxon] details > summary > header > h1 {
+section .block[data-taxon] details>summary>header>h1 {
   font-size: 12pt;
 }
 
@@ -202,29 +191,29 @@ span.taxon {
   font-weight: bolder;
 }
 
-.link-list > section > details > summary > header h1 {
+.link-list>section>details>summary>header h1 {
   font-size: 12pt;
 }
 
-article > section > details > summary > header > h1 {
+article>section>details>summary>header>h1 {
   font-size: 1.5em;
 }
 
-details > summary {
+details>summary {
   list-style-type: none;
 }
 
-details > summary::marker,
-details > summary::-webkit-details-marker {
+details>summary::marker,
+details>summary::-webkit-details-marker {
   display: none;
 }
 
-article > section > details > summary > header {
+article>section>details>summary>header {
   display: block;
   margin-bottom: 0.5em;
 }
 
-section.block > details:not(:last-child) {
+section.block>details:not(:last-child) {
   margin-bottom: 0.3em;
 }
 
@@ -276,7 +265,7 @@ nav#toc ul:empty {
   display: none;
 }
 
-nav#toc li > ul {
+nav#toc li>ul {
   padding-left: 1em;
 }
 
@@ -366,7 +355,10 @@ a.slug {
   text-decoration-thickness: 1px;
 }
 
-.link.external::after /*, .edit-button::after*/ {
+.link.external::after
+
+/*, .edit-button::after*/
+  {
   background-size: 100% 100%;
   content: "";
   display: inline-block;
@@ -425,11 +417,11 @@ td.macro-doc {
   font-size: 0.9em;
 }
 
-.enclosing.macro-scope > .enclosing {
+.enclosing.macro-scope>.enclosing {
   border-radius: 2px;
 }
 
-.enclosing.macro-scope > .enclosing:hover {
+.enclosing.macro-scope>.enclosing:hover {
   background-color: rgba(0, 100, 255, 0.1);
 }
 
@@ -560,6 +552,7 @@ address {
 
 .metadata ul li {
   display: inline;
+  font-size: 11pt;
 }
 
 img {
@@ -650,12 +643,12 @@ ol li ol li ol {
     margin-right: 0.2em;
   }
 
-  #grid-wrapper > nav {
+  #grid-wrapper>nav {
     display: none;
     transition: ease all 0.2s;
   }
 
-  #grid-wrapper > article {
+  #grid-wrapper>article {
     max-width: none;
   }
 

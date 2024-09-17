@@ -39,15 +39,11 @@ expanded="true"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr
 type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
-text="Hello, World!">Hello, World!</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
 href="epoche.xml"
 addr="epoche"
-title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Welcome to your first tree! This tree is the root of your forest.
-  <fr:ul><fr:li><fr:link
-type="external"
-href="http://www.jonmsterling.com/jms-007D.xml">Build and view your forest for the first time</fr:link></fr:li>
-    <fr:li><fr:link
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
 type="external"
 href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
     <fr:li><fr:link
