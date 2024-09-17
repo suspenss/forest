@@ -1,0 +1,6 @@
+[forest]
+trees = ["trees"]                      # The directories in which your trees are stored
+assets = ["assets"]                    # The directories in which your assets are stored
+theme = "forester-theme"               # The directory in which your theme is stored
+root = "epoche-0001"
+prefixes = ["epoche", "poem", "ocmst"]
