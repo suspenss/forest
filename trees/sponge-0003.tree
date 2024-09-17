@@ -1,0 +1,19 @@
+\date{2024-09-17}
+\title{Sponge Lab 1}
+\author{epoche}
+
+\p{
+  Implement TCP, to provide the byte-stream abstraction between a pair of computers separated by an unreliable datagram network.
+}
+
+\p {
+  substrings no more than about 1,460 bytes apiece.
+}
+
+\p {
+  Reassembler receive a substring, consisting of a string of bytes, and the index of the first byte of that string within the larger byte stream. Every byte in stream has index. As soon as reassembler find the next byte of the stream,  it will put the byte in the byte stream to keep data in order. 
+}
+
+\p{
+  假设序号从 0 开始，维护一个数据结构，按顺序缓存子串，一旦有子串为从头开始连续的子串，将这个子串添加到字节流中。
+}

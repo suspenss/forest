@@ -1,0 +1,15 @@
+\date{2024-09-17}
+\title{Sponge Lab 0}
+\author{epoche}
+
+\strong{Target 1: Webget}
+
+\p{
+  To implement a byte stream based on the reliable transmission interface (TCP socket protocol) provided by the system.
+}
+
+\strong{Target 2: In Memory Byte Stream}
+
+\p{
+  The peek function interface only gets the next byte of size 1 rather than specifing the length, so we can use queue to do this. In this way, the ByteStream throughput is only 0.70 Gbit/s.
+}
