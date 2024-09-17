@@ -1,0 +1,78 @@
+\date{2024-09-16}
+\title{Binary Search Tree}
+\author{epoche}
+\import{common}
+
+\p{
+Binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.
+
+Here is the implemention in OCaml:
+}
+
+\pre\verb<<<|
+module BstSet = struct
+  type 'a t = Leaf | Node of 'a * 'a t * 'a t
+
+  let empty = Leaf
+
+  let rec size = function
+    | Leaf -> 0
+    | Node (_, left, right) -> 1 + size left + size right
+  ;;
+
+  let rec add x = function
+    | Leaf -> Node (x, Leaf, Leaf)
+    | Node (v, l, r) when v > x -> Node (v, add x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, add x r)
+    | t -> t
+  ;;
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (v, l, _) when v > x -> mem x l
+    | Node (v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let rec remove_union lt = function
+    | Leaf -> lt
+    | Node (v, l, r) -> Node (v, remove_union lt l, r)
+  ;;
+
+  let rec remove x = function
+    | Leaf -> failwith "tree doesn't contain the element to be removed"
+    | Node (v, l, r) when v > x -> Node (v, remove x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, remove x r)
+    | Node (_, l, r) -> remove_union l r
+  ;;
+
+  let update x x' t = t |> remove x |> add x'
+end
+<<<
+\p{
+  When remove a node in BST, we can union the subtree of removal node to
+  the most left Leaf node in the right subtree.
+}
+
+\<html:figure>{
+  \<html:img>[src]{https://github.com/epochess/epochess.github.io/assets/61822407/6e3209ca-e595-4c52-b93e-c02b98440946}{}
+}
+
+\p{
+  We can get the key's ordering before delete node \code{del}:
+
+  ##{{a} > L > {b} >  del  > Y > {c} > … > R > {d}}
+}
+
+\p{
+After delete the node, we union the subtree #{L} to the left subnode of
+#{Y}, and the ordering is still unchanged.
+}
+
+\p{
+The time complexity of above operations is #{O(h)}, which #{h} is height
+of the tree. In most case, tree have good shape that all non-leaf node
+have 2 children node, so these operations are logarithmic because of
+#{h = \log(n + 1)}. But in the worest case, all nodes of the tree are
+right children of the parent node, so that the time complexity is degenerated #{O(n)}.
+}
