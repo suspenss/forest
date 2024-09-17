@@ -2,14 +2,18 @@
 \title{Sponge Lab 0}
 \author{epoche}
 
-\strong{Target 1: Webget}
+\strong{Task 1: Webget}
 
 \p{
-  To implement a byte stream based on the reliable transmission interface (TCP socket protocol) provided by the system.
+  To implement a byte stream based on the reliable transmission interface (TCP socket protocol) provided by the system. In pratice, it uses the TCP Socket API such as \code{connect} to establish a connection with server, \code{write} to write some information to the bytestream, \code{read} to read some information from the bytestream, and \code{close} the socket communication finally.
 }
 
-\strong{Target 2: In Memory Byte Stream}
+\strong{Task 2: In Memory Byte Stream}
 
 \p{
-  The peek function interface only gets the next byte of size 1 rather than specifing the length, so we can use queue to do this. In this way, the ByteStream throughput is only 0.70 Gbit/s.
+  Task 2 is require us to maintain a container that can push some element to the container's back, and take some element from the front. So we can use queue, however, the effciency of the queue is very bad when we peek some bytes of certain length,  because in this function we just view them rather than pop them out. In this way, we can use deuqe to access its internal element, the use \code{[]} operator,  which has only #{O(1)} time complexity.
+}
+
+\p{
+  In Minnow, [this implementation](https://github.com/epochess/Sponge/blob/master/libsponge/byte_stream.cc) can achieve a throughput of 18Gbit/s.
 }

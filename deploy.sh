@@ -13,7 +13,7 @@ git clean -fxd
 cd ../forest
 cp -a ./output/. ../forest-deploy
 
-# cd ../forest-deploy
+cd ../forest-deploy
 git add .
 git commit -m "Deploy"
 git push

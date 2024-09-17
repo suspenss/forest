@@ -7,13 +7,13 @@
 }
 
 \p {
-  substrings no more than about 1,460 bytes apiece.
-}
-
-\p {
-  Reassembler receive a substring, consisting of a string of bytes, and the index of the first byte of that string within the larger byte stream. Every byte in stream has index. As soon as reassembler find the next byte of the stream,  it will put the byte in the byte stream to keep data in order. 
+  Reassembler receive a substring that no more than about 1,460 bytes apiece, consisting of a string of bytes, and the index of the first byte of that string within the larger byte stream. Every byte in stream has index. As soon as reassembler find the next byte of the stream,  it will put the byte in the byte stream to keep data in order. 
 }
 
 \p{
-  假设序号从 0 开始，维护一个数据结构，按顺序缓存子串，一旦有子串为从头开始连续的子串，将这个子串添加到字节流中。
+  This lab requires a data structure that allows internal bytes to be arranged in order. Firstly, pushing the byte with index 0, and then pushing byte in which the precursor byte has been pushed. I to do this with vector, just like counting sort, I set a vector whose max length is the number of bytes in bytestream, and when I get a substring, I put each byte into the vector, the index of the bytes in the vector is the index of the byte stream.
+}
+
+\p{
+  Considering the implementation of the function, when I get a string, I put it into reassembler buffer. If the first byte index of the string is less than or equal to the next expect index (initial to 0), traverse buffer from the next expect index to the end of buffer, find the bytes that continuous starting at next expect byte and push to the bytestream. Otherwise, don't traverse.
 }
