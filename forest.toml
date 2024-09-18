@@ -1,7 +1,7 @@
 [forest]
-trees = ["trees"]        # The directories in which your trees are stored
-assets = ["assets"]      # The directories in which your assets are stored
-theme = "forester-theme" # The directory in which your theme is stored
+trees = ["trees"]                                # The directories in which your trees are stored
+assets = ["assets"]                              # The directories in which your assets are stored
+theme = "forester-theme"                         # The directory in which your theme is stored
 root = "epoche-0001"
-# base_url = "https://trebor-huang.github.io/forest/"
-prefixes = ["epoche", "poem", "ocmst"]
+base_url = "https://epochess.github.io/forest/"
+prefixes = ["epoche", "poem", "ocmst", "sponge"]

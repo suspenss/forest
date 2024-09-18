@@ -15,5 +15,5 @@
 }
 
 \p{
-  In Minnow, [this implementation](https://github.com/epochess/Sponge/blob/master/libsponge/byte_stream.cc) can achieve a throughput of 18Gbit/s.
+  In Minnow, [this implementation](https://github.com/epochess/Sponge/blob/master/libsponge/byte_stream.cc) can achieve a throughput of 16Gbit/s.
 }
