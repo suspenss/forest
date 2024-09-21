@@ -8,6 +8,8 @@
   --monospace: "Computer Modern Typewriter", monospace;
 }
 
+
+
 html {
   overflow-x: hidden;
 }
@@ -21,6 +23,18 @@ body {
   line-height: 1.5em;
   hyphens: auto;
   overflow-x: hidden;
+}
+
+.cjk-text {
+  font-family: 'Source Han Serif SC VF';
+  font-size: 7pt;
+}
+
+:lang(zh) {
+  font-family: 'Source Han Serif SC VF';
+  /* 使用 CJK 字体 */
+  font-size: 7pt;
+  /* 调整 CJK 字符大小 */
 }
 
 /* .tree-content {
