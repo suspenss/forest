@@ -1,0 +1,25 @@
+\date{2024-09-21}
+\title{Sponge lab 3: the TCP sender}
+\author{epoche}
+% \import{common}
+
+\p{
+  The TCP sender is another participant in the TCP connection at an endpoint. It's responsible for reading from the bytestream, spliting it into some segments that serve as the payload of the TCP segment, writing the SYN, FIN, and Sequence Number in the TCP segment header, and then conveying these TCP segments to another endpoint in the connection. When a segment has been sent, sender marks it as a outstanding segment, which means the segment has been sent but not acknowledged.
+  
+  Sender's retransmission depend on the acknowledgment number, when no segment has been acknowledged, sender resends the earliest outstanding segment if enough time passed since it was sent. Once the acknowledgment number is received, sender compares it to the previous ack number, and if the received is greater than previous number, sender will sweep segments marked as outstanding and send some new segments to fill the flow window.
+}
+
+\p{
+  There are lots of details to note:
+  \ol{ 
+    \li{Double the retransmission timeout and record the consecutive number of retransmission when window size is nonzero.}
+    \li{Starting timer when sending a new segment.}
+    \li{SYN and FIN flag also occupies a sequence number.}
+    \li{Window size is the upper bound of bytes in flight.}
+    \li{Reject outdate and illegal acknowledgment number.}
+  }
+}
+
+\p{
+  Sender isn't hard to implement, but it's a little bit complicated.
+}

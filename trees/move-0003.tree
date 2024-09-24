@@ -1,0 +1,7 @@
+\date{2024-09-22}
+\title{the std::move function}
+\author{epoche}
+
+\p{
+  \code{std::move} is a function template in cpp standred library. It converts a lvalue to rvalue reference.
+}

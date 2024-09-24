@@ -1,0 +1,23 @@
+\date{2024-09-22}
+\title{Value Categories}
+\author{epoche}
+
+\p{
+  Before C++11, this language has only two kinds of value: lvalue and rvalue. And only lvalue has reference.
+  \ul{
+    \li{
+      \strong{lvalue}: lvalue is an object that can get its address like variable and array.
+    }
+    \li{
+      \strong{rvalue}: rvalue is an object that can't get its address like literal and temporary variable.
+    }
+  }
+}
+
+% C++11 引入了右值引用，进一步细分了值类别：
+% 左值引用（lvalue reference）：只能绑定到左值。
+% 右值引用（rvalue reference）：只能绑定到右值（如临时对象或通过 std::move 转换的对象）。
+
+\p{
+  C++11 adds the rvalue reference, we can use \code{Type&&} to make a rvalue reference. Rvalue reference binds the rvalue object rather than copy it, while the object that be binded will be destoryed.
+}

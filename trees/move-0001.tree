@@ -1,0 +1,18 @@
+\date{2024-09-22}
+\title{Move Semantics in cpp}
+\author{epoche}
+
+\p{
+  In [cs144 libsponge buffer header](https://github.com/suspenss/Sponge/blob/master/libsponge/util/buffer.hh) has a very strange constructor that I never seen before:
+
+  \pre\verb<<<|
+  Buffer(std::string &&str) noexcept
+      : _storage(std::make_shared<std::string>(std::move(str))) {}
+  <<<
+
+  When I'm trying to construct a buffer using \code{Buffer payload = Buffer(str);}, it doesn't work. So I searched this question on the web and I finally found that correct way to use the constructor is \code{Buffer payload = Buffer(std::move(str));}. So I'm going to make some notes about "\strong{Move Semantics}".
+}
+
+\transclude{move-0002}
+
+\transclude{move-0003}
