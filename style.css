@@ -17,7 +17,7 @@ html {
 body {
   font-family: var(--font);
   text-underline-position: from-font;
-  font-size: 12.1pt;
+  font-size: 12pt;
   /* Subtly make it thicker */
   -webkit-text-stroke-width: 0.25pt;
   line-height: 1.5em;
@@ -650,7 +650,7 @@ ol li ol li ol {
   body {
     margin-top: 1em;
     margin-left: 0.3em;
-    margin-right: 0;
+    margin-right: 0.3em;
     transition: ease all 0.2s;
   }
 
@@ -668,15 +668,17 @@ ol li ol li ol {
   }
 
   .block {
-    margin-right: -0.5em;
+    /* margin-right: -0.5em; */
     padding-right: 0.5em;
-    border-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    padding-left: 0.5em;
+    /* border-right: 0; */
+    /* border-top-right-radius: 0;
+    border-bottom-right-radius: 0; */
   }
 
   .block:hover {
-    border-right: 0;
+    /* border-right: 0; */
+    border-radius: var(--radius);
   }
 }
 
