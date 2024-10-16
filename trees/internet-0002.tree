@@ -1,0 +1,8 @@
+\date{2024-09-26}
+\title{TCP Socket}
+\author{epoche}
+
+\p{
+  TCP Socket communication is a suite of API to establish a connection and communicate with other.
+  In [CS144 Sponge Lab 1: Webget](sponge-0002) it used to implement the webget. 
+}

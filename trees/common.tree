@@ -14,6 +14,16 @@
   }
 }
 
+\def\memo[body]{
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{Nothing Memos}
+      \body
+    }
+  }
+}
+
 % ===== TeX embeddings
 % Since the main styling uses 12pt, we change the font to fit
 % Also we give a little more space to avoid clipping

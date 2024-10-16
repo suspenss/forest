@@ -5,7 +5,7 @@
 \strong{Task 1: Webget}
 
 \p{
-  To implement a byte stream based on the reliable transmission interface (TCP socket) provided by the system. In pratice, it uses the TCP Socket API such as \code{connect} to establish a connection with server, \code{write} to write some data to the bytestream, \code{read} to read some data from the bytestream, and \code{close} the socket communication finally.
+  To implement a byte stream based on the reliable transmission interface ([TCP socket](internet-0002)) provided by the system. In pratice, it uses the TCP Socket API such as \code{connect} to establish a connection with server, \code{write} to write some data to the bytestream, \code{read} to read some data from the bytestream, and \code{close} the socket communication finally.
 }
 
 \strong{Task 2: In Memory Byte Stream}
