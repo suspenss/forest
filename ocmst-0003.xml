@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:addr
+type="user">ocmst-0003</fr:addr><fr:route>ocmst-0003.xml</fr:route><fr:title
+text="Red-Black Tree">Red-Black Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Red-Black Tree is a simple balanced tree data structure, which means it
+can keep balanced with good shape so that the operations are
+logarithmic.</fr:p><fr:p>In RBT, every node have color red or black, the RI make tree balanced.
+<fr:ol>1.  <fr:strong>Local Invariant</fr:strong>: there are no two adjacnet red node in any path.</fr:ol>
+<fr:ol>2.  <fr:strong>Global Invariant</fr:strong>: the number of black node in every path from root
+    to leaf is equal.</fr:ol></fr:p><fr:p>The ADT operations are same as BST : insertion, deletion.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="user">ocmst-0004</fr:addr><fr:route>ocmst-0004.xml</fr:route><fr:title
+text="Insertion (Okaskaki's algorithm)">Insertion (Okaskaki's algorithm)</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>When we insert elements into the tree, if we set the color black, we may
+violate global invariants, and if we set it red, we may violate local
+invariants. The algorithm that we can solve this problem to maintain the
+RI is <fr:em>Okasaki's Algorithm</fr:em>.</fr:p><fr:p>That algorithm set the inserted node color red in insertion to ensure
+the global invariant, but it will violate the local invariant, and the
+shape of tree are four cases.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/4e8309b6-addd-446e-ae3a-54ba77b10153" />
+</html:figure><fr:p>Okasaki's algorihtm told us of above cases trees can be converted to be
+a same tree which have perfect shape.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/062f3284-8fe4-4b7a-b0ff-d8ddc2140577"
+width="200" />
+</html:figure><fr:p>We can conclude the ordering of these trees:
+<fr:tex
+display="block"><![CDATA[{a} < X < {b} < Y < {c} < Z < {d}]]></fr:tex></fr:p><fr:p>Here is the implementation in OCaml:</fr:p><fr:pre><![CDATA[module RBTree = struct
+  type color =
+    | Red
+    | Black
+
+  type 'a tree =
+    | Leaf
+    | Node of (color * 'a * 'a tree * 'a tree)
+
+  let empty = Leaf
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (_, v, l, _) when v > x -> mem x l
+    | Node (_, v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let balance = function
+    | Black, z, Node (Red, y, Node (Red, x, a, b), c), d
+    | Black, z, Node (Red, x, a, Node (Red, y, b, c)), d
+    | Black, x, a, Node (Red, z, Node (Red, y, b, c), d)
+    | Black, x, a, Node (Red, y, b, Node (Red, z, c, d)) ->
+      Node (Red, y, Node (Black, x, a, b), Node (Black, z, c, d))
+    | a, b, c, d -> Node (a, b, c, d)
+  ;;
+
+  let rec insert_aux x = function
+    | Leaf -> Node (Red, x, Leaf, Leaf)
+    | Node (c, v, l, r) when c > x -> balance (c, v, insert_aux x l, r)
+    | Node (c, v, l, r) when c < x -> balance (c, v, l, insert_aux x r)
+    | node -> node
+  ;;
+
+  let insert x t =
+    match insert_aux x t with
+    | Leaf -> failwith "error"
+    | Node (_, v, l, r) -> Node (Black, v, l, r)
+  ;;
+end]]></fr:pre></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
+type="user">ocmst-0001</fr:addr><fr:route>ocmst-0001.xml</fr:route><fr:title
+text="Functional Red-Black Tree Implementation">Functional Red-Black Tree Implementation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:addr
+type="user">ocmst-0002</fr:addr><fr:route>ocmst-0002.xml</fr:route><fr:title
+text="Binary Search Tree">Binary Search Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.
+
+Here is the implemention in OCaml:</fr:p><fr:pre><![CDATA[module BstSet = struct
+  type 'a t = Leaf | Node of 'a * 'a t * 'a t
+
+  let empty = Leaf
+
+  let rec size = function
+    | Leaf -> 0
+    | Node (_, left, right) -> 1 + size left + size right
+  ;;
+
+  let rec add x = function
+    | Leaf -> Node (x, Leaf, Leaf)
+    | Node (v, l, r) when v > x -> Node (v, add x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, add x r)
+    | t -> t
+  ;;
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (v, l, _) when v > x -> mem x l
+    | Node (v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let rec remove_union lt = function
+    | Leaf -> lt
+    | Node (v, l, r) -> Node (v, remove_union lt l, r)
+  ;;
+
+  let rec remove x = function
+    | Leaf -> failwith "tree doesn't contain the element to be removed"
+    | Node (v, l, r) when v > x -> Node (v, remove x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, remove x r)
+    | Node (_, l, r) -> remove_union l r
+  ;;
+
+  let update x x' t = t |> remove x |> add x'
+end]]></fr:pre><fr:p>When remove a node in BST, we can union the subtree of removal node to
+  the most left Leaf node in the right subtree.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/6e3209ca-e595-4c52-b93e-c02b98440946" />
+</html:figure><fr:p>We can get the key's ordering before delete node <fr:code>del</fr:code>:
+
+  <fr:tex
+display="block"><![CDATA[{a} > L > {b} >  del  > Y > {c} > … > R > {d}]]></fr:tex></fr:p><fr:p>After delete the node, we union the subtree <fr:tex
+display="inline"><![CDATA[L]]></fr:tex> to the left subnode of
+<fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, and the ordering is still unchanged.</fr:p><fr:p>The time complexity of above operations is <fr:tex
+display="inline"><![CDATA[O(h)]]></fr:tex>, which <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is height
+of the tree. In most case, tree have good shape that all non-leaf node
+have 2 children node, so these operations are logarithmic because of
+<fr:tex
+display="inline"><![CDATA[h = \log (n + 1)]]></fr:tex>. But in the worest case, all nodes of the tree are
+right children of the parent node, so that the time complexity is degenerated <fr:tex
+display="inline"><![CDATA[O(n)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:addr
+type="user">ocmst-0003</fr:addr><fr:route>ocmst-0003.xml</fr:route><fr:title
+text="Red-Black Tree">Red-Black Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Red-Black Tree is a simple balanced tree data structure, which means it
+can keep balanced with good shape so that the operations are
+logarithmic.</fr:p><fr:p>In RBT, every node have color red or black, the RI make tree balanced.
+<fr:ol>1.  <fr:strong>Local Invariant</fr:strong>: there are no two adjacnet red node in any path.</fr:ol>
+<fr:ol>2.  <fr:strong>Global Invariant</fr:strong>: the number of black node in every path from root
+    to leaf is equal.</fr:ol></fr:p><fr:p>The ADT operations are same as BST : insertion, deletion.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="user">ocmst-0004</fr:addr><fr:route>ocmst-0004.xml</fr:route><fr:title
+text="Insertion (Okaskaki's algorithm)">Insertion (Okaskaki's algorithm)</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>When we insert elements into the tree, if we set the color black, we may
+violate global invariants, and if we set it red, we may violate local
+invariants. The algorithm that we can solve this problem to maintain the
+RI is <fr:em>Okasaki's Algorithm</fr:em>.</fr:p><fr:p>That algorithm set the inserted node color red in insertion to ensure
+the global invariant, but it will violate the local invariant, and the
+shape of tree are four cases.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/4e8309b6-addd-446e-ae3a-54ba77b10153" />
+</html:figure><fr:p>Okasaki's algorihtm told us of above cases trees can be converted to be
+a same tree which have perfect shape.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/062f3284-8fe4-4b7a-b0ff-d8ddc2140577"
+width="200" />
+</html:figure><fr:p>We can conclude the ordering of these trees:
+<fr:tex
+display="block"><![CDATA[{a} < X < {b} < Y < {c} < Z < {d}]]></fr:tex></fr:p><fr:p>Here is the implementation in OCaml:</fr:p><fr:pre><![CDATA[module RBTree = struct
+  type color =
+    | Red
+    | Black
+
+  type 'a tree =
+    | Leaf
+    | Node of (color * 'a * 'a tree * 'a tree)
+
+  let empty = Leaf
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (_, v, l, _) when v > x -> mem x l
+    | Node (_, v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let balance = function
+    | Black, z, Node (Red, y, Node (Red, x, a, b), c), d
+    | Black, z, Node (Red, x, a, Node (Red, y, b, c)), d
+    | Black, x, a, Node (Red, z, Node (Red, y, b, c), d)
+    | Black, x, a, Node (Red, y, b, Node (Red, z, c, d)) ->
+      Node (Red, y, Node (Black, x, a, b), Node (Black, z, c, d))
+    | a, b, c, d -> Node (a, b, c, d)
+  ;;
+
+  let rec insert_aux x = function
+    | Leaf -> Node (Red, x, Leaf, Leaf)
+    | Node (c, v, l, r) when c > x -> balance (c, v, insert_aux x l, r)
+    | Node (c, v, l, r) when c < x -> balance (c, v, l, insert_aux x r)
+    | node -> node
+  ;;
+
+  let insert x t =
+    match insert_aux x t with
+    | Leaf -> failwith "error"
+    | Node (_, v, l, r) -> Node (Black, v, l, r)
+  ;;
+end]]></fr:pre></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

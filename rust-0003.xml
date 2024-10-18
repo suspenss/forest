@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">rust-0003</fr:addr><fr:route>rust-0003.xml</fr:route><fr:title
+text="Where clauses and Trait Bound">Where clauses and Trait Bound</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Where clauses: <fr:code>impl&lt;T&gt; TYPE&lt;T&gt; where T: TRAIT1 + TRAIT2 {}</fr:code>.</fr:li>
+    <fr:li>Trait Bound: <fr:code>fn f&lt;T: TRAIT1 + TRAIT2&gt;(PAR1: T, PAR2: T) {}</fr:code>.</fr:li></fr:ul>
+  Obviously, <fr:code>where</fr:code> clauses is used in <fr:code>impl</fr:code> statement, <fr:code>trait</fr:code> bound is used in function declariation, even they have similar effect.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">rust-0001</fr:addr><fr:route>rust-0001.xml</fr:route><fr:title
+text="Rustlings notes">Rustlings notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+type="user">rust-0003</fr:addr><fr:route>rust-0003.xml</fr:route><fr:title
+text="Where clauses and Trait Bound">Where clauses and Trait Bound</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Where clauses: <fr:code>impl&lt;T&gt; TYPE&lt;T&gt; where T: TRAIT1 + TRAIT2 {}</fr:code>.</fr:li>
+    <fr:li>Trait Bound: <fr:code>fn f&lt;T: TRAIT1 + TRAIT2&gt;(PAR1: T, PAR2: T) {}</fr:code>.</fr:li></fr:ul>
+  Obviously, <fr:code>where</fr:code> clauses is used in <fr:code>impl</fr:code> statement, <fr:code>trait</fr:code> bound is used in function declariation, even they have similar effect.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">rust-0002</fr:addr><fr:route>rust-0002.xml</fr:route><fr:title
+text="Lifetime">Lifetime</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Lifetime is confirmed in compile time instead of runtime. Such in a function accept 2 parameters and return a reference one of parameters, borrow checker can't get the lifetime of return value in compile time, the return value can also be 2 possible, if these parameters's lifetime are different, compiler can't make a choice. So this time we need specific the lifetime to tell compiler the return value lifetime.</fr:p><fr:p>I think lifetime mechanism just tell the function caller that the lifetime of function return value is in some guarantee, and you must keep in these guarantee, so that complier can check the value lifetime all of the program in complier time.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

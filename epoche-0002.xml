@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
+type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007K.xml">Creating your personal biographical tree</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="true"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:addr
+type="user">epoche-0001</fr:addr><fr:route>index.xml</fr:route><fr:title
+text="Epoche's forest">Epoche's forest</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This is my forest, which is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-005P.xml">a way of organizing notes</fr:link>. Here is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-009H.xml">a list of other websites organized as forests</fr:link>. Some of the contents here:</fr:p><fr:ul><fr:li><fr:link
+type="local"
+href="sponge-0001.xml"
+addr="sponge-0001"
+title="Sponge Lab Notes">Sponge Lab Notes</fr:link></fr:li>
+  <fr:li><fr:link
+type="local"
+href="move-0001.xml"
+addr="move-0001"
+title="Move Semantics in cpp">Move Semantics in cpp</fr:link></fr:li></fr:ul><fr:p>You can also visit my <fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">contributor page</fr:link> to see a list of my trees.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>273</fr:anchor><fr:addr
+type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007K.xml">Creating your personal biographical tree</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

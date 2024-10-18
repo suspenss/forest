@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:addr
+type="user">epoche</fr:addr><fr:route>epoche.xml</fr:route><fr:title
+text="Epoche">Epoche</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
+name="institution">Zhengzhou University of Light Industry</fr:meta><fr:meta
+name="position">Bachelor Student</fr:meta><fr:meta
+name="external">https://github.com/suspenss</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>My name is 苏爽, but I go by the name <fr:em>epoche</fr:em> online. I’m interested in Computer Science.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="true"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr
+type="user">epoche-0001</fr:addr><fr:route>index.xml</fr:route><fr:title
+text="Epoche's forest">Epoche's forest</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This is my forest, which is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-005P.xml">a way of organizing notes</fr:link>. Here is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-009H.xml">a list of other websites organized as forests</fr:link>. Some of the contents here:</fr:p><fr:ul><fr:li><fr:link
+type="local"
+href="sponge-0001.xml"
+addr="sponge-0001"
+title="Sponge Lab Notes">Sponge Lab Notes</fr:link></fr:li>
+  <fr:li><fr:link
+type="local"
+href="move-0001.xml"
+addr="move-0001"
+title="Move Semantics in cpp">Move Semantics in cpp</fr:link></fr:li></fr:ul><fr:p>You can also visit my <fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">contributor page</fr:link> to see a list of my trees.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>273</fr:anchor><fr:addr
+type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007K.xml">Creating your personal biographical tree</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Contributions">Contributions</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:addr
+type="user">rust-0002</fr:addr><fr:route>rust-0002.xml</fr:route><fr:title
+text="Lifetime">Lifetime</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Lifetime is confirmed in compile time instead of runtime. Such in a function accept 2 parameters and return a reference one of parameters, borrow checker can't get the lifetime of return value in compile time, the return value can also be 2 possible, if these parameters's lifetime are different, compiler can't make a choice. So this time we need specific the lifetime to tell compiler the return value lifetime.</fr:p><fr:p>I think lifetime mechanism just tell the function caller that the lifetime of function return value is in some guarantee, and you must keep in these guarantee, so that complier can check the value lifetime all of the program in complier time.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
+type="user">rust-0001</fr:addr><fr:route>rust-0001.xml</fr:route><fr:title
+text="Rustlings notes">Rustlings notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+type="user">rust-0003</fr:addr><fr:route>rust-0003.xml</fr:route><fr:title
+text="Where clauses and Trait Bound">Where clauses and Trait Bound</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Where clauses: <fr:code>impl&lt;T&gt; TYPE&lt;T&gt; where T: TRAIT1 + TRAIT2 {}</fr:code>.</fr:li>
+    <fr:li>Trait Bound: <fr:code>fn f&lt;T: TRAIT1 + TRAIT2&gt;(PAR1: T, PAR2: T) {}</fr:code>.</fr:li></fr:ul>
+  Obviously, <fr:code>where</fr:code> clauses is used in <fr:code>impl</fr:code> statement, <fr:code>trait</fr:code> bound is used in function declariation, even they have similar effect.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr
+type="user">rust-0002</fr:addr><fr:route>rust-0002.xml</fr:route><fr:title
+text="Lifetime">Lifetime</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Lifetime is confirmed in compile time instead of runtime. Such in a function accept 2 parameters and return a reference one of parameters, borrow checker can't get the lifetime of return value in compile time, the return value can also be 2 possible, if these parameters's lifetime are different, compiler can't make a choice. So this time we need specific the lifetime to tell compiler the return value lifetime.</fr:p><fr:p>I think lifetime mechanism just tell the function caller that the lifetime of function return value is in some guarantee, and you must keep in these guarantee, so that complier can check the value lifetime all of the program in complier time.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+type="user">rust-0003</fr:addr><fr:route>rust-0003.xml</fr:route><fr:title
+text="Where clauses and Trait Bound">Where clauses and Trait Bound</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Where clauses: <fr:code>impl&lt;T&gt; TYPE&lt;T&gt; where T: TRAIT1 + TRAIT2 {}</fr:code>.</fr:li>
+    <fr:li>Trait Bound: <fr:code>fn f&lt;T: TRAIT1 + TRAIT2&gt;(PAR1: T, PAR2: T) {}</fr:code>.</fr:li></fr:ul>
+  Obviously, <fr:code>where</fr:code> clauses is used in <fr:code>impl</fr:code> statement, <fr:code>trait</fr:code> bound is used in function declariation, even they have similar effect.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:addr
+type="user">internet-0002</fr:addr><fr:route>internet-0002.xml</fr:route><fr:title
+text="TCP Socket">TCP Socket</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>26</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>TCP Socket communication is a suite of API to establish a connection and communicate with other.
+  In <fr:link
+type="local"
+href="sponge-0002.xml"
+addr="sponge-0002"
+title="Sponge Lab 0: networking warmup">CS144 Sponge Lab 1: Webget</fr:link> it used to implement the webget.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
+type="user">move-0001</fr:addr><fr:route>move-0001.xml</fr:route><fr:title
+text="Move Semantics in cpp">Move Semantics in cpp</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>In <fr:link
+type="external"
+href="https://github.com/suspenss/Sponge/blob/master/libsponge/util/buffer.hh">cs144 libsponge buffer header</fr:link> has a very strange constructor that I never seen before:
+
+  <fr:pre><![CDATA[Buffer(std::string &&str) noexcept
+    : _storage(std::make_shared<std::string>(std::move(str))) {}]]></fr:pre>
+
+  When I'm trying to construct a buffer using <fr:code>Buffer payload = Buffer(str);</fr:code>, it doesn't work. So I searched this question on the web and I finally found that correct way to use the constructor is <fr:code>Buffer payload = Buffer(std::move(str));</fr:code>. So I'm going to make some notes about "<fr:strong>Move Semantics</fr:strong>".</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:addr
+type="user">move-0002</fr:addr><fr:route>move-0002.xml</fr:route><fr:title
+text="Value Categories">Value Categories</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Before C++11, this language has only two kinds of value: lvalue and rvalue. And only lvalue has reference.
+  <fr:ul><fr:li><fr:strong>lvalue</fr:strong>: lvalue is an object that can get its address like variable and array.</fr:li>
+    <fr:li><fr:strong>rvalue</fr:strong>: rvalue is an object that can't get its address like literal and temporary variable.</fr:li></fr:ul></fr:p><fr:p>C++11 adds the rvalue reference, we can use <fr:code>Type&amp;&amp;</fr:code> to make a rvalue reference. Rvalue reference binds the rvalue object rather than copy it, while the object that be binded will be destoryed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:addr
+type="user">move-0003</fr:addr><fr:route>move-0003.xml</fr:route><fr:title
+text="The std::move function">The std::move function</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:code>std::move</fr:code> is a function template in cpp standred library. It converts a lvalue to rvalue reference.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:addr
+type="user">move-0002</fr:addr><fr:route>move-0002.xml</fr:route><fr:title
+text="Value Categories">Value Categories</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Before C++11, this language has only two kinds of value: lvalue and rvalue. And only lvalue has reference.
+  <fr:ul><fr:li><fr:strong>lvalue</fr:strong>: lvalue is an object that can get its address like variable and array.</fr:li>
+    <fr:li><fr:strong>rvalue</fr:strong>: rvalue is an object that can't get its address like literal and temporary variable.</fr:li></fr:ul></fr:p><fr:p>C++11 adds the rvalue reference, we can use <fr:code>Type&amp;&amp;</fr:code> to make a rvalue reference. Rvalue reference binds the rvalue object rather than copy it, while the object that be binded will be destoryed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>370</fr:anchor><fr:addr
+type="user">move-0003</fr:addr><fr:route>move-0003.xml</fr:route><fr:title
+text="The std::move function">The std::move function</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>22</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:code>std::move</fr:code> is a function template in cpp standred library. It converts a lvalue to rvalue reference.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:addr
+type="user">sponge-0006</fr:addr><fr:route>sponge-0006.xml</fr:route><fr:title
+text="Sponge lab 3: the TCP Sender">Sponge lab 3: the TCP Sender</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>21</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The TCP sender is another participant in the TCP connection at an endpoint. It's responsible for reading from the bytestream, spliting it into some segments that serve as the payload of the TCP segment, writing the SYN, FIN, and Sequence Number in the TCP segment header, and then conveying these TCP segments to another endpoint in the connection. When a segment has been sent, sender marks it as a outstanding segment, which means the segment has been sent but not acknowledged.
+  
+  Sender's retransmission depend on the acknowledgment number, when no segment has been acknowledged, sender resends the earliest outstanding segment if enough time passed since it was sent. Once the acknowledgment number is received, sender compares it to the previous ack number, and if the received is greater than previous number, sender will sweep segments marked as outstanding and send some new segments to fill the flow window.</fr:p><fr:p>There are lots of details to note:
+  <fr:ol><fr:li>Double the retransmission timeout and record the consecutive number of retransmission when window size is nonzero.</fr:li>
+    <fr:li>Starting timer when sending a new segment.</fr:li>
+    <fr:li>SYN and FIN flag also occupies a sequence number.</fr:li>
+    <fr:li>Window size is the upper bound of bytes in flight.</fr:li>
+    <fr:li>Reject outdate and illegal acknowledgment number.</fr:li></fr:ol></fr:p><fr:p>Sender isn't hard to implement, but it's a little bit complicated.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:addr
+type="user">sponge-0004</fr:addr><fr:route>sponge-0004.xml</fr:route><fr:title
+text="Sponge Lab 2: the TCP Receiver">Sponge Lab 2: the TCP Receiver</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>TCP Receiver receives the <fr:link
+type="local"
+href="sponge-0005.xml"
+addr="sponge-0005"
+title="TCP Segment">TCP segment</fr:link> and the payload of the datagram, <fr:link
+type="local"
+href="sponge-0003.xml"
+addr="sponge-0003"
+title="Sponge Lab 1: stitching substrings into a byte stream">reassembler</fr:link> in receiver reassembling the bytes and pushing into bytestream, so that code can read the data from bytestream with TCP socket read function(such as the <fr:link
+type="local"
+href="sponge-0002.xml"
+addr="sponge-0002"
+title="Sponge Lab 0: networking warmup">first lab</fr:link>). Additinoally, receiver also send the acknowledgement number and window size to control the flow of incoming data.</fr:p><fr:p>Firstly we need to implement the conversion functions that can convert the sequence number to the absolute sequence number, ensuring that <fr:code>unwrap</fr:code> and <fr:code>wrap</fr:code> are correct. The <fr:code>segment_received</fr:code> function will call the <fr:code>push_substring</fr:code> function to push the payload to the reassembler. When the syn flag is true, we must set the index is 0 regardless of the empty payload.</fr:p><fr:p>In <fr:code>ackno</fr:code> function, it needs to add 1 when recieve the syn flag because syn also occupies a seq number. About the fin flag, we can check the status of bytestream and plus ackno 1 if it is closed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="user">sponge-0005</fr:addr><fr:route>sponge-0005.xml</fr:route><fr:title
+text="TCP Segment">TCP Segment</fr:title><fr:taxon>Figure</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="tcp_segment_header.png" />
+  <fr:figcaption>TCP segment</fr:figcaption>
+</html:figure></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:addr
+type="user">ocmst-0004</fr:addr><fr:route>ocmst-0004.xml</fr:route><fr:title
+text="Insertion (Okaskaki's algorithm)">Insertion (Okaskaki's algorithm)</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>When we insert elements into the tree, if we set the color black, we may
+violate global invariants, and if we set it red, we may violate local
+invariants. The algorithm that we can solve this problem to maintain the
+RI is <fr:em>Okasaki's Algorithm</fr:em>.</fr:p><fr:p>That algorithm set the inserted node color red in insertion to ensure
+the global invariant, but it will violate the local invariant, and the
+shape of tree are four cases.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/4e8309b6-addd-446e-ae3a-54ba77b10153" />
+</html:figure><fr:p>Okasaki's algorihtm told us of above cases trees can be converted to be
+a same tree which have perfect shape.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/062f3284-8fe4-4b7a-b0ff-d8ddc2140577"
+width="200" />
+</html:figure><fr:p>We can conclude the ordering of these trees:
+<fr:tex
+display="block"><![CDATA[{a} < X < {b} < Y < {c} < Z < {d}]]></fr:tex></fr:p><fr:p>Here is the implementation in OCaml:</fr:p><fr:pre><![CDATA[module RBTree = struct
+  type color =
+    | Red
+    | Black
+
+  type 'a tree =
+    | Leaf
+    | Node of (color * 'a * 'a tree * 'a tree)
+
+  let empty = Leaf
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (_, v, l, _) when v > x -> mem x l
+    | Node (_, v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let balance = function
+    | Black, z, Node (Red, y, Node (Red, x, a, b), c), d
+    | Black, z, Node (Red, x, a, Node (Red, y, b, c)), d
+    | Black, x, a, Node (Red, z, Node (Red, y, b, c), d)
+    | Black, x, a, Node (Red, y, b, Node (Red, z, c, d)) ->
+      Node (Red, y, Node (Black, x, a, b), Node (Black, z, c, d))
+    | a, b, c, d -> Node (a, b, c, d)
+  ;;
+
+  let rec insert_aux x = function
+    | Leaf -> Node (Red, x, Leaf, Leaf)
+    | Node (c, v, l, r) when c > x -> balance (c, v, insert_aux x l, r)
+    | Node (c, v, l, r) when c < x -> balance (c, v, l, insert_aux x r)
+    | node -> node
+  ;;
+
+  let insert x t =
+    match insert_aux x t with
+    | Leaf -> failwith "error"
+    | Node (_, v, l, r) -> Node (Black, v, l, r)
+  ;;
+end]]></fr:pre></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr
+type="user">ocmst-0003</fr:addr><fr:route>ocmst-0003.xml</fr:route><fr:title
+text="Red-Black Tree">Red-Black Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Red-Black Tree is a simple balanced tree data structure, which means it
+can keep balanced with good shape so that the operations are
+logarithmic.</fr:p><fr:p>In RBT, every node have color red or black, the RI make tree balanced.
+<fr:ol>1.  <fr:strong>Local Invariant</fr:strong>: there are no two adjacnet red node in any path.</fr:ol>
+<fr:ol>2.  <fr:strong>Global Invariant</fr:strong>: the number of black node in every path from root
+    to leaf is equal.</fr:ol></fr:p><fr:p>The ADT operations are same as BST : insertion, deletion.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="user">ocmst-0004</fr:addr><fr:route>ocmst-0004.xml</fr:route><fr:title
+text="Insertion (Okaskaki's algorithm)">Insertion (Okaskaki's algorithm)</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>When we insert elements into the tree, if we set the color black, we may
+violate global invariants, and if we set it red, we may violate local
+invariants. The algorithm that we can solve this problem to maintain the
+RI is <fr:em>Okasaki's Algorithm</fr:em>.</fr:p><fr:p>That algorithm set the inserted node color red in insertion to ensure
+the global invariant, but it will violate the local invariant, and the
+shape of tree are four cases.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/4e8309b6-addd-446e-ae3a-54ba77b10153" />
+</html:figure><fr:p>Okasaki's algorihtm told us of above cases trees can be converted to be
+a same tree which have perfect shape.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/062f3284-8fe4-4b7a-b0ff-d8ddc2140577"
+width="200" />
+</html:figure><fr:p>We can conclude the ordering of these trees:
+<fr:tex
+display="block"><![CDATA[{a} < X < {b} < Y < {c} < Z < {d}]]></fr:tex></fr:p><fr:p>Here is the implementation in OCaml:</fr:p><fr:pre><![CDATA[module RBTree = struct
+  type color =
+    | Red
+    | Black
+
+  type 'a tree =
+    | Leaf
+    | Node of (color * 'a * 'a tree * 'a tree)
+
+  let empty = Leaf
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (_, v, l, _) when v > x -> mem x l
+    | Node (_, v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let balance = function
+    | Black, z, Node (Red, y, Node (Red, x, a, b), c), d
+    | Black, z, Node (Red, x, a, Node (Red, y, b, c)), d
+    | Black, x, a, Node (Red, z, Node (Red, y, b, c), d)
+    | Black, x, a, Node (Red, y, b, Node (Red, z, c, d)) ->
+      Node (Red, y, Node (Black, x, a, b), Node (Black, z, c, d))
+    | a, b, c, d -> Node (a, b, c, d)
+  ;;
+
+  let rec insert_aux x = function
+    | Leaf -> Node (Red, x, Leaf, Leaf)
+    | Node (c, v, l, r) when c > x -> balance (c, v, insert_aux x l, r)
+    | Node (c, v, l, r) when c < x -> balance (c, v, l, insert_aux x r)
+    | node -> node
+  ;;
+
+  let insert x t =
+    match insert_aux x t with
+    | Leaf -> failwith "error"
+    | Node (_, v, l, r) -> Node (Black, v, l, r)
+  ;;
+end]]></fr:pre></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:addr
+type="user">sponge-0001</fr:addr><fr:route>sponge-0001.xml</fr:route><fr:title
+text="Sponge Lab Notes">Sponge Lab Notes</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:addr
+type="user">sponge-0002</fr:addr><fr:route>sponge-0002.xml</fr:route><fr:title
+text="Sponge Lab 0: networking warmup">Sponge Lab 0: networking warmup</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:strong>Task 1: Webget</fr:strong><fr:p>To implement a byte stream based on the reliable transmission interface (<fr:link
+type="local"
+href="internet-0002.xml"
+addr="internet-0002"
+title="TCP Socket">TCP socket</fr:link>) provided by the system. In pratice, it uses the TCP Socket API such as <fr:code>connect</fr:code> to establish a connection with server, <fr:code>write</fr:code> to write some data to the bytestream, <fr:code>read</fr:code> to read some data from the bytestream, and <fr:code>close</fr:code> the socket communication finally.</fr:p><fr:strong>Task 2: In Memory Byte Stream</fr:strong><fr:p>Task 2 is require us to maintain a container that can push some element to the container's back, and take some element front. So we can use queue, however, the effciency of the queue is very bad when we peek some bytes of certain length,  because in this function we just view them rather than pop them out. In this way, we can use deque to access its internal element, the use <fr:code>[]</fr:code> operator,  which has only <fr:tex
+display="inline"><![CDATA[O(1)]]></fr:tex> time complexity.</fr:p><fr:p>In Minnow, <fr:link
+type="external"
+href="https://github.com/epochess/Sponge/blob/master/libsponge/byte_stream.cc">this implementation</fr:link> can achieve a throughput of 16Gbit/s.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:addr
+type="user">sponge-0003</fr:addr><fr:route>sponge-0003.xml</fr:route><fr:title
+text="Sponge Lab 1: stitching substrings into a byte stream">Sponge Lab 1: stitching substrings into a byte stream</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Reassembler</fr:strong> receive a substring that no more than about 1,460 bytes apiece, consisting of a string of bytes, and the index of the first byte of that string within the larger byte stream. Every byte in stream has index. As soon as reassembler find the next byte of the stream,  it will put the byte in the byte stream to keep data in order.</fr:p><fr:p>This lab requires a data structure that allows internal bytes to be arranged in order. Firstly, pushing the byte with index 0, and then pushing byte in which the precursor byte has been pushed. I to do this with vector, just like counting sort, I set a vector whose maximum length is the bytes number of the bytestream, and when I get a substring, I put each byte into the vector, the index of the bytes in the vector is the index of the byte stream.</fr:p><fr:p>Considering the implementation of the function, when I get a string, I put it into reassembler buffer. If the first byte index of the string is less than or equal to the next expected index (which is initial to 0), the buffer is traversed from the next expected index to the end of the buffer, finding the bytes that contiguous from next expected byte and pushing them into the bytestream. Otherwise, don't traverse. In both cases, the maximum length buffer can contain is the avaliable capacity of the byte stream.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:addr
+type="user">sponge-0004</fr:addr><fr:route>sponge-0004.xml</fr:route><fr:title
+text="Sponge Lab 2: the TCP Receiver">Sponge Lab 2: the TCP Receiver</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>TCP Receiver receives the <fr:link
+type="local"
+href="sponge-0005.xml"
+addr="sponge-0005"
+title="TCP Segment">TCP segment</fr:link> and the payload of the datagram, <fr:link
+type="local"
+href="sponge-0003.xml"
+addr="sponge-0003"
+title="Sponge Lab 1: stitching substrings into a byte stream">reassembler</fr:link> in receiver reassembling the bytes and pushing into bytestream, so that code can read the data from bytestream with TCP socket read function(such as the <fr:link
+type="local"
+href="sponge-0002.xml"
+addr="sponge-0002"
+title="Sponge Lab 0: networking warmup">first lab</fr:link>). Additinoally, receiver also send the acknowledgement number and window size to control the flow of incoming data.</fr:p><fr:p>Firstly we need to implement the conversion functions that can convert the sequence number to the absolute sequence number, ensuring that <fr:code>unwrap</fr:code> and <fr:code>wrap</fr:code> are correct. The <fr:code>segment_received</fr:code> function will call the <fr:code>push_substring</fr:code> function to push the payload to the reassembler. When the syn flag is true, we must set the index is 0 regardless of the empty payload.</fr:p><fr:p>In <fr:code>ackno</fr:code> function, it needs to add 1 when recieve the syn flag because syn also occupies a seq number. About the fin flag, we can check the status of bytestream and plus ackno 1 if it is closed.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:addr
+type="user">sponge-0006</fr:addr><fr:route>sponge-0006.xml</fr:route><fr:title
+text="Sponge lab 3: the TCP Sender">Sponge lab 3: the TCP Sender</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>21</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The TCP sender is another participant in the TCP connection at an endpoint. It's responsible for reading from the bytestream, spliting it into some segments that serve as the payload of the TCP segment, writing the SYN, FIN, and Sequence Number in the TCP segment header, and then conveying these TCP segments to another endpoint in the connection. When a segment has been sent, sender marks it as a outstanding segment, which means the segment has been sent but not acknowledged.
+  
+  Sender's retransmission depend on the acknowledgment number, when no segment has been acknowledged, sender resends the earliest outstanding segment if enough time passed since it was sent. Once the acknowledgment number is received, sender compares it to the previous ack number, and if the received is greater than previous number, sender will sweep segments marked as outstanding and send some new segments to fill the flow window.</fr:p><fr:p>There are lots of details to note:
+  <fr:ol><fr:li>Double the retransmission timeout and record the consecutive number of retransmission when window size is nonzero.</fr:li>
+    <fr:li>Starting timer when sending a new segment.</fr:li>
+    <fr:li>SYN and FIN flag also occupies a sequence number.</fr:li>
+    <fr:li>Window size is the upper bound of bytes in flight.</fr:li>
+    <fr:li>Reject outdate and illegal acknowledgment number.</fr:li></fr:ol></fr:p><fr:p>Sender isn't hard to implement, but it's a little bit complicated.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:addr
+type="user">sponge-0002</fr:addr><fr:route>sponge-0002.xml</fr:route><fr:title
+text="Sponge Lab 0: networking warmup">Sponge Lab 0: networking warmup</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:strong>Task 1: Webget</fr:strong><fr:p>To implement a byte stream based on the reliable transmission interface (<fr:link
+type="local"
+href="internet-0002.xml"
+addr="internet-0002"
+title="TCP Socket">TCP socket</fr:link>) provided by the system. In pratice, it uses the TCP Socket API such as <fr:code>connect</fr:code> to establish a connection with server, <fr:code>write</fr:code> to write some data to the bytestream, <fr:code>read</fr:code> to read some data from the bytestream, and <fr:code>close</fr:code> the socket communication finally.</fr:p><fr:strong>Task 2: In Memory Byte Stream</fr:strong><fr:p>Task 2 is require us to maintain a container that can push some element to the container's back, and take some element front. So we can use queue, however, the effciency of the queue is very bad when we peek some bytes of certain length,  because in this function we just view them rather than pop them out. In this way, we can use deque to access its internal element, the use <fr:code>[]</fr:code> operator,  which has only <fr:tex
+display="inline"><![CDATA[O(1)]]></fr:tex> time complexity.</fr:p><fr:p>In Minnow, <fr:link
+type="external"
+href="https://github.com/epochess/Sponge/blob/master/libsponge/byte_stream.cc">this implementation</fr:link> can achieve a throughput of 16Gbit/s.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr
+type="user">sponge-0003</fr:addr><fr:route>sponge-0003.xml</fr:route><fr:title
+text="Sponge Lab 1: stitching substrings into a byte stream">Sponge Lab 1: stitching substrings into a byte stream</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:strong>Reassembler</fr:strong> receive a substring that no more than about 1,460 bytes apiece, consisting of a string of bytes, and the index of the first byte of that string within the larger byte stream. Every byte in stream has index. As soon as reassembler find the next byte of the stream,  it will put the byte in the byte stream to keep data in order.</fr:p><fr:p>This lab requires a data structure that allows internal bytes to be arranged in order. Firstly, pushing the byte with index 0, and then pushing byte in which the precursor byte has been pushed. I to do this with vector, just like counting sort, I set a vector whose maximum length is the bytes number of the bytestream, and when I get a substring, I put each byte into the vector, the index of the bytes in the vector is the index of the byte stream.</fr:p><fr:p>Considering the implementation of the function, when I get a string, I put it into reassembler buffer. If the first byte index of the string is less than or equal to the next expected index (which is initial to 0), the buffer is traversed from the next expected index to the end of the buffer, finding the bytes that contiguous from next expected byte and pushing them into the bytestream. Otherwise, don't traverse. In both cases, the maximum length buffer can contain is the avaliable capacity of the byte stream.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
+type="user">ocmst-0002</fr:addr><fr:route>ocmst-0002.xml</fr:route><fr:title
+text="Binary Search Tree">Binary Search Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.
+
+Here is the implemention in OCaml:</fr:p><fr:pre><![CDATA[module BstSet = struct
+  type 'a t = Leaf | Node of 'a * 'a t * 'a t
+
+  let empty = Leaf
+
+  let rec size = function
+    | Leaf -> 0
+    | Node (_, left, right) -> 1 + size left + size right
+  ;;
+
+  let rec add x = function
+    | Leaf -> Node (x, Leaf, Leaf)
+    | Node (v, l, r) when v > x -> Node (v, add x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, add x r)
+    | t -> t
+  ;;
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (v, l, _) when v > x -> mem x l
+    | Node (v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let rec remove_union lt = function
+    | Leaf -> lt
+    | Node (v, l, r) -> Node (v, remove_union lt l, r)
+  ;;
+
+  let rec remove x = function
+    | Leaf -> failwith "tree doesn't contain the element to be removed"
+    | Node (v, l, r) when v > x -> Node (v, remove x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, remove x r)
+    | Node (_, l, r) -> remove_union l r
+  ;;
+
+  let update x x' t = t |> remove x |> add x'
+end]]></fr:pre><fr:p>When remove a node in BST, we can union the subtree of removal node to
+  the most left Leaf node in the right subtree.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/6e3209ca-e595-4c52-b93e-c02b98440946" />
+</html:figure><fr:p>We can get the key's ordering before delete node <fr:code>del</fr:code>:
+
+  <fr:tex
+display="block"><![CDATA[{a} > L > {b} >  del  > Y > {c} > … > R > {d}]]></fr:tex></fr:p><fr:p>After delete the node, we union the subtree <fr:tex
+display="inline"><![CDATA[L]]></fr:tex> to the left subnode of
+<fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, and the ordering is still unchanged.</fr:p><fr:p>The time complexity of above operations is <fr:tex
+display="inline"><![CDATA[O(h)]]></fr:tex>, which <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is height
+of the tree. In most case, tree have good shape that all non-leaf node
+have 2 children node, so these operations are logarithmic because of
+<fr:tex
+display="inline"><![CDATA[h = \log (n + 1)]]></fr:tex>. But in the worest case, all nodes of the tree are
+right children of the parent node, so that the time complexity is degenerated <fr:tex
+display="inline"><![CDATA[O(n)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="true"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr
+type="user">epoche-0001</fr:addr><fr:route>index.xml</fr:route><fr:title
+text="Epoche's forest">Epoche's forest</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This is my forest, which is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-005P.xml">a way of organizing notes</fr:link>. Here is <fr:link
+type="external"
+href="https://www.jonmsterling.com/jms-009H.xml">a list of other websites organized as forests</fr:link>. Some of the contents here:</fr:p><fr:ul><fr:li><fr:link
+type="local"
+href="sponge-0001.xml"
+addr="sponge-0001"
+title="Sponge Lab Notes">Sponge Lab Notes</fr:link></fr:li>
+  <fr:li><fr:link
+type="local"
+href="move-0001.xml"
+addr="move-0001"
+title="Move Semantics in cpp">Move Semantics in cpp</fr:link></fr:li></fr:ul><fr:p>You can also visit my <fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">contributor page</fr:link> to see a list of my trees.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>273</fr:anchor><fr:addr
+type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007K.xml">Creating your personal biographical tree</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>392</fr:anchor><fr:addr
+type="user">ocmst-0001</fr:addr><fr:route>ocmst-0001.xml</fr:route><fr:title
+text="Functional Red-Black Tree Implementation">Functional Red-Black Tree Implementation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:addr
+type="user">ocmst-0002</fr:addr><fr:route>ocmst-0002.xml</fr:route><fr:title
+text="Binary Search Tree">Binary Search Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.
+
+Here is the implemention in OCaml:</fr:p><fr:pre><![CDATA[module BstSet = struct
+  type 'a t = Leaf | Node of 'a * 'a t * 'a t
+
+  let empty = Leaf
+
+  let rec size = function
+    | Leaf -> 0
+    | Node (_, left, right) -> 1 + size left + size right
+  ;;
+
+  let rec add x = function
+    | Leaf -> Node (x, Leaf, Leaf)
+    | Node (v, l, r) when v > x -> Node (v, add x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, add x r)
+    | t -> t
+  ;;
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (v, l, _) when v > x -> mem x l
+    | Node (v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let rec remove_union lt = function
+    | Leaf -> lt
+    | Node (v, l, r) -> Node (v, remove_union lt l, r)
+  ;;
+
+  let rec remove x = function
+    | Leaf -> failwith "tree doesn't contain the element to be removed"
+    | Node (v, l, r) when v > x -> Node (v, remove x l, r)
+    | Node (v, l, r) when v < x -> Node (v, l, remove x r)
+    | Node (_, l, r) -> remove_union l r
+  ;;
+
+  let update x x' t = t |> remove x |> add x'
+end]]></fr:pre><fr:p>When remove a node in BST, we can union the subtree of removal node to
+  the most left Leaf node in the right subtree.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/6e3209ca-e595-4c52-b93e-c02b98440946" />
+</html:figure><fr:p>We can get the key's ordering before delete node <fr:code>del</fr:code>:
+
+  <fr:tex
+display="block"><![CDATA[{a} > L > {b} >  del  > Y > {c} > … > R > {d}]]></fr:tex></fr:p><fr:p>After delete the node, we union the subtree <fr:tex
+display="inline"><![CDATA[L]]></fr:tex> to the left subnode of
+<fr:tex
+display="inline"><![CDATA[Y]]></fr:tex>, and the ordering is still unchanged.</fr:p><fr:p>The time complexity of above operations is <fr:tex
+display="inline"><![CDATA[O(h)]]></fr:tex>, which <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is height
+of the tree. In most case, tree have good shape that all non-leaf node
+have 2 children node, so these operations are logarithmic because of
+<fr:tex
+display="inline"><![CDATA[h = \log (n + 1)]]></fr:tex>. But in the worest case, all nodes of the tree are
+right children of the parent node, so that the time complexity is degenerated <fr:tex
+display="inline"><![CDATA[O(n)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:addr
+type="user">ocmst-0003</fr:addr><fr:route>ocmst-0003.xml</fr:route><fr:title
+text="Red-Black Tree">Red-Black Tree</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Red-Black Tree is a simple balanced tree data structure, which means it
+can keep balanced with good shape so that the operations are
+logarithmic.</fr:p><fr:p>In RBT, every node have color red or black, the RI make tree balanced.
+<fr:ol>1.  <fr:strong>Local Invariant</fr:strong>: there are no two adjacnet red node in any path.</fr:ol>
+<fr:ol>2.  <fr:strong>Global Invariant</fr:strong>: the number of black node in every path from root
+    to leaf is equal.</fr:ol></fr:p><fr:p>The ADT operations are same as BST : insertion, deletion.</fr:p><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:addr
+type="user">ocmst-0004</fr:addr><fr:route>ocmst-0004.xml</fr:route><fr:title
+text="Insertion (Okaskaki's algorithm)">Insertion (Okaskaki's algorithm)</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>17</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>When we insert elements into the tree, if we set the color black, we may
+violate global invariants, and if we set it red, we may violate local
+invariants. The algorithm that we can solve this problem to maintain the
+RI is <fr:em>Okasaki's Algorithm</fr:em>.</fr:p><fr:p>That algorithm set the inserted node color red in insertion to ensure
+the global invariant, but it will violate the local invariant, and the
+shape of tree are four cases.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/4e8309b6-addd-446e-ae3a-54ba77b10153" />
+</html:figure><fr:p>Okasaki's algorihtm told us of above cases trees can be converted to be
+a same tree which have perfect shape.</fr:p><html:figure
+xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:img
+src="https://github.com/epochess/epochess.github.io/assets/61822407/062f3284-8fe4-4b7a-b0ff-d8ddc2140577"
+width="200" />
+</html:figure><fr:p>We can conclude the ordering of these trees:
+<fr:tex
+display="block"><![CDATA[{a} < X < {b} < Y < {c} < Z < {d}]]></fr:tex></fr:p><fr:p>Here is the implementation in OCaml:</fr:p><fr:pre><![CDATA[module RBTree = struct
+  type color =
+    | Red
+    | Black
+
+  type 'a tree =
+    | Leaf
+    | Node of (color * 'a * 'a tree * 'a tree)
+
+  let empty = Leaf
+
+  let rec mem x = function
+    | Leaf -> false
+    | Node (_, v, l, _) when v > x -> mem x l
+    | Node (_, v, _, r) when v < x -> mem x r
+    | _ -> true
+  ;;
+
+  let balance = function
+    | Black, z, Node (Red, y, Node (Red, x, a, b), c), d
+    | Black, z, Node (Red, x, a, Node (Red, y, b, c)), d
+    | Black, x, a, Node (Red, z, Node (Red, y, b, c), d)
+    | Black, x, a, Node (Red, y, b, Node (Red, z, c, d)) ->
+      Node (Red, y, Node (Black, x, a, b), Node (Black, z, c, d))
+    | a, b, c, d -> Node (a, b, c, d)
+  ;;
+
+  let rec insert_aux x = function
+    | Leaf -> Node (Red, x, Leaf, Leaf)
+    | Node (c, v, l, r) when c > x -> balance (c, v, insert_aux x l, r)
+    | Node (c, v, l, r) when c < x -> balance (c, v, l, insert_aux x r)
+    | node -> node
+  ;;
+
+  let insert x t =
+    match insert_aux x t with
+    | Leaf -> failwith "error"
+    | Node (_, v, l, r) -> Node (Black, v, l, r)
+  ;;
+end]]></fr:pre></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr
+type="user">epoche-0002</fr:addr><fr:route>epoche-0002.xml</fr:route><fr:title
+text="Learning progress on evergreen notes in forester">Learning progress on evergreen notes in forester</fr:title><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>16</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007N.xml">Overview of the Forester markup language</fr:link></fr:li>
+    <fr:li><fr:link
+type="external"
+href="http://www.jonmsterling.com/jms-007K.xml">Creating your personal biographical tree</fr:link></fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
