@@ -1,0 +1,17 @@
+
+
+\date{2024-10-17}
+\title{Where clauses and Trait Bound}
+\author{epoche}
+
+\p{
+  \ul{
+    \li{ 
+      Where clauses: \code{impl<T> TYPE<T> where T: TRAIT1 + TRAIT2 {}}.
+    }
+    \li{ 
+      Trait Bound: \code{fn f<T: TRAIT1 + TRAIT2>(PAR1: T, PAR2: T) {}}.
+    }
+  }
+  Obviously, \code{where} clauses is used in \code{impl} statement, \code{trait} bound is used in function declariation, even they have similar effect.
+}

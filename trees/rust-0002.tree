@@ -1,0 +1,11 @@
+\date{2024-10-17}
+\title{Lifetime}
+\author{epoche}
+
+\p{
+  Lifetime is confirmed in compile time instead of runtime. Such in a function accept 2 parameters and return a reference one of parameters, borrow checker can't get the lifetime of return value in compile time, the return value can also be 2 possible, if these parameters's lifetime are different, compiler can't make a choice. So this time we need specific the lifetime to tell compiler the return value lifetime.  
+}
+
+\p{ 
+  I think lifetime mechanism just tell the function caller that the lifetime of function return value is in some guarantee, and you must keep in these guarantee, so that complier can check the value lifetime all of the program in complier time. 
+}

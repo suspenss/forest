@@ -1,7 +1,7 @@
 [forest]
-trees = ["trees"]                                # The directories in which your trees are stored
+trees = ["trees/"]                                # The directories in which your trees are stored
 assets = ["assets"]                              # The directories in which your assets are stored
 theme = "forester-theme"                         # The directory in which your theme is stored
 root = "epoche-0001"
 base_url = "https://suspenss.github.io/forest/"
-prefixes = ["epoche", "poem", "ocmst", "sponge"]
+prefixes = ["epoche", "poem", "ocmst", "sponge", "rust", "move"]
