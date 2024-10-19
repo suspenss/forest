@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr
 type="user">fstm-0003</fr:addr><fr:route>fstm-0003.xml</fr:route><fr:title
 text="Inode">Inode</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -15,4 +15,75 @@ href="epoche.xml"
 addr="epoche"
 title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Index Node is unique within a filesystem, but in a filesystem, maybe two or more directory entries could point to the same index node called <fr:strong>hard-link</fr:strong>.
 
-<fr:pre><![CDATA[path -> inode -> (file content / file metadata)]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+<fr:pre><![CDATA[path -> inode -> (file content / file metadata)]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr
+type="user">fstm-0001</fr:addr><fr:route>fstm-0001.xml</fr:route><fr:title
+text="Linux Filesystem">Linux Filesystem</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr
+type="user">fstm-0002</fr:addr><fr:route>fstm-0002.xml</fr:route><fr:title
+text="File">File</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Filesystem just like a map which key is the path name, value is the file content: 
+<fr:pre><![CDATA[struct File {
+  mode (permissions, type), size, user, group,
+  timestamps (atime, mtime, ctime),
+  content (bytes)
+};]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr
+type="user">fstm-0003</fr:addr><fr:route>fstm-0003.xml</fr:route><fr:title
+text="Inode">Inode</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Index Node is unique within a filesystem, but in a filesystem, maybe two or more directory entries could point to the same index node called <fr:strong>hard-link</fr:strong>.
+
+<fr:pre><![CDATA[path -> inode -> (file content / file metadata)]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr
+type="user">fstm-0004</fr:addr><fr:route>fstm-0004.xml</fr:route><fr:title
+text="Block Device">Block Device</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:pre><![CDATA[lass Disk {
+  // Logical Block Addressing (LBA)
+  readSector(long n, void * buf);
+  writeSector(long n, const void * buf);
+};]]></fr:pre><fr:p>Typical sector is 512B in old times and 4096B since 2010s. Typical block is 1Kib in default, can also be 2Kib or 4Kib ... in recently.</fr:p><fr:p>Filesystem encapsulate above api and support open, close, write, read, lseek ..., to users.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
