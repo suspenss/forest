@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:addr
+type="user">fstm-0004</fr:addr><fr:route>fstm-0004.xml</fr:route><fr:title
+text="Block Device">Block Device</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:pre><![CDATA[lass Disk {
+  // Logical Block Addressing (LBA)
+  readSector(long n, void * buf);
+  writeSector(long n, const void * buf);
+};]]></fr:pre><fr:p>Typical sector is 512B in old times and 4096B since 2010s. Typical block is 1Kib in default, can also be 2Kib or 4Kib ... in recently.</fr:p><fr:p>Filesystem encapsulate above api and support open, close, write, read, lseek ..., to users.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:addr
+type="user">fstm-0002</fr:addr><fr:route>fstm-0002.xml</fr:route><fr:title
+text="Abstraction">Abstraction</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Filesystem just like a map which key is the path name, value is the file content: 
+<fr:pre><![CDATA[struct File {
+  mode (permissions, type), size, user, group,
+  timestamps (atime, mtime, ctime),
+  content (bytes)
+};]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

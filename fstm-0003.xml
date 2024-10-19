@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:addr
+type="user">fstm-0003</fr:addr><fr:route>fstm-0003.xml</fr:route><fr:title
+text="Inode">Inode</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>18</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="epoche.xml"
+addr="epoche"
+title="Epoche">Epoche</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Index Node is unique within a filesystem, but in a filesystem, maybe two or more directory entries could point to the same index node called <fr:strong>hard-link</fr:strong>.
+
+<fr:pre><![CDATA[path -> inode -> (file content / file metadata)]]></fr:pre></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
